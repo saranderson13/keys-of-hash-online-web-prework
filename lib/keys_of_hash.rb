@@ -17,6 +17,7 @@ class Hash
     
     arguments.each do |arg|
       values.each do |value|
+        binding.pry
         if key(arg) == value
           array_of_keys << key(arg)
           # binding.pry
