@@ -13,17 +13,13 @@ class Hash
   def keys_of(*arguments)
     # returns an array of every key with a value that matches an argument
     
-    array_of_keys = []
+    # array_of_keys = []
     
     arguments.each do |arg|
       keys.map do |key|
-        if arg == self[key]
-          
-        end
+        key if arg == self[key]
       end
     end
-    array_of_keys
-    # binding.pry
   end
 end
 # animals_test.keys_of('Madagascar', 'Panama')
