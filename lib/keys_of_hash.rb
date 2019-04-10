@@ -4,7 +4,7 @@ class Hash
     
     # array_of_keys = []
     
-    arguments.each do |arg|
+    arguments.map do |arg|
       keys.map { |key| key if arg == self[key] }
     end
     # array_of_keys
