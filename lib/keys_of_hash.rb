@@ -16,7 +16,7 @@ class Hash
     array_of_keys = []
     
     keys.map do |key|
-      arguments.map do |key|
+      arguments.each do |arg|
         binding.pry
       end
     end
