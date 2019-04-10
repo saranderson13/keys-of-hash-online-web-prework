@@ -15,13 +15,9 @@ class Hash
     
     array_of_keys = []
     
-    arguments.each do |arg|
-      values.each do |value|
+    keys.map do |key|
+      arguments.map do |key|
         binding.pry
-        if key(arg) == value
-          array_of_keys << key(arg)
-          # binding.pry
-        end
       end
     end
     array_of_keys
