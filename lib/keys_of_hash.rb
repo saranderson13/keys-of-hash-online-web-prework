@@ -18,7 +18,7 @@ class Hash
     arguments.each do |arg|
       keys.map do |key|
         array_of_keys << key if arg == self[key]
-        binding.pry
+        # binding.pry
       end
     end
     array_of_keys
