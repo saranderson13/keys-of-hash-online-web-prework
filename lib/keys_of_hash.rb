@@ -15,9 +15,11 @@ class Hash
     
     array_of_keys = []
     
-    keys.map do |key|
-      arguments.each do |arg|
-        binding.pry
+    arguments.each do |arg|
+      keys.map do |key|
+        if arg == self[key]
+          
+        end
       end
     end
     array_of_keys
